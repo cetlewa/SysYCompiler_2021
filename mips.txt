@@ -1,0 +1,629 @@
+.data
+    a$0$arr$dim1_510: .space 2040
+    prime$0$arr$dim1_510: .space 2040
+    reflect1$0$arr$dim1_16: .space 64
+    reflect2$0$arr$dim1_5$dim2_5: .space 100
+    str$0: .asciiz "19373354\n"
+    str$1: .asciiz " "
+    str$2: .asciiz "\n"
+.text
+$initCETLEWAinit$:
+    li $t0, 0
+    li $t1, 711942876
+    subu $t0, $t0, $t1
+    sw $t0, 0($sp)
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1060809599
+    subu $t0, $t0, $t1
+    sw $t0, -4($sp)
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1758839997
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 423174272
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1412407466
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 375872692
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 5
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1543568839
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 6
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 915987033
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 7
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 698198080
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 8
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 2143283456
+    subu $t0, $t0, $t1
+    sw $t0, -8($sp)
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 9
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 2059223660
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 10
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 34179219
+    subu $t0, $t0, $t1
+    sw $t0, -12($sp)
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 11
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 378910912
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 12
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1498631475
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 13
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1853883889
+    subu $t0, $t0, $t1
+    sw $t0, -16($sp)
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 14
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1640319187
+    la $t1, reflect1$0$arr$dim1_16
+    li $t2, 15
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1152785601
+    subu $t0, $t0, $t1
+    sw $t0, -20($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 0
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1891446969
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 0
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 938484211
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 0
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1596516698
+    subu $t0, $t0, $t1
+    sw $t0, -24($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 0
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1681072330
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 0
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 128222498
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 1
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1090169129
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 1
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 347746822
+    subu $t0, $t0, $t1
+    sw $t0, -28($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 1
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 326257601
+    subu $t0, $t0, $t1
+    sw $t0, -32($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 1
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1366930863
+    subu $t0, $t0, $t1
+    sw $t0, -36($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 1
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 823961496
+    subu $t0, $t0, $t1
+    sw $t0, -40($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 2
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 2103453081
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 2
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 402114823
+    subu $t0, $t0, $t1
+    sw $t0, -44($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 2
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 2139806715
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 2
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 732814375
+    subu $t0, $t0, $t1
+    sw $t0, -48($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 2
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1302967469
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 3
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1623817872
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 3
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 898372270
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 3
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 812618050
+    subu $t0, $t0, $t1
+    sw $t0, -52($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 3
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1403178881
+    subu $t0, $t0, $t1
+    sw $t0, -56($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 3
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1776328495
+    subu $t0, $t0, $t1
+    sw $t0, -60($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 4
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 0
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 958769364
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 4
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 1
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 47496017
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 4
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 2
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 0
+    li $t1, 1384738865
+    subu $t0, $t0, $t1
+    sw $t0, -64($sp)
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 4
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 3
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    li $t0, 1751940200
+    la $t1, reflect2$0$arr$dim1_5$dim2_5
+    li $t2, 4
+    li $t3, 5
+    mul $t2, $t2, $t3
+    addiu $t2, $t2, 4
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+$MainFunc$:
+    li $t0, 2
+    sw $t0, 0($sp)
+    li $v0, 5
+    syscall
+    sw $v0, -4($sp)
+    la $a0, str$0
+    li $v0, 4
+    syscall
+while$0_begin:
+    lw $t0, 0($sp)
+    lw $t1, -4($sp)
+    slt $t0, $t0, $t1
+    sw $t0, -8($sp)
+    beq $t0, $0, while$0_end
+while$0_stmt:
+    li $t0, 1
+    la $t1, a$0$arr$dim1_510
+    lw $t2, 0($sp)
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    lw $t0, 0($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -12($sp)
+    sw $t0, 0($sp)
+    j while$0_begin
+while$0_end:
+    li $t0, 2
+    sw $t0, 0($sp)
+    li $t0, 0
+    sw $t0, -16($sp)
+while$1_begin:
+    lw $t0, 0($sp)
+    lw $t1, -4($sp)
+    slt $t0, $t0, $t1
+    sw $t0, -20($sp)
+    beq $t0, $0, while$1_end
+while$1_stmt:
+    la $t0, a$0$arr$dim1_510
+    lw $t1, 0($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -24($sp)
+    beq $t0, $0, if$0_end
+if$0_begin:
+    lw $t0, 0($sp)
+    la $t1, prime$0$arr$dim1_510
+    lw $t2, -16($sp)
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    lw $t0, -16($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -28($sp)
+    sw $t0, -16($sp)
+if$0_end:
+    li $t0, 0
+    sw $t0, -32($sp)
+while$2_begin:
+    lw $t0, -32($sp)
+    lw $t1, -16($sp)
+    slt $t0, $t0, $t1
+    sw $t0, -36($sp)
+    beq $t0, $0, while$2_end
+    la $t0, prime$0$arr$dim1_510
+    lw $t1, -32($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -40($sp)
+    lw $t0, 0($sp)
+    lw $t1, -40($sp)
+    mul $t0, $t0, $t1
+    sw $t0, -44($sp)
+    lw $t1, -4($sp)
+    sle $t0, $t0, $t1
+    sw $t0, -48($sp)
+    beq $t0, $0, while$2_end
+while$2_stmt:
+    la $t0, prime$0$arr$dim1_510
+    lw $t1, -32($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -52($sp)
+    lw $t0, 0($sp)
+    lw $t1, -52($sp)
+    mul $t0, $t0, $t1
+    sw $t0, -56($sp)
+    li $t0, 0
+    la $t1, a$0$arr$dim1_510
+    lw $t2, -56($sp)
+    sll $t2, $t2, 2
+    addu $t1, $t1, $t2
+    sw $t0, 0($t1)
+    la $t0, prime$0$arr$dim1_510
+    lw $t1, -32($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -60($sp)
+    lw $t0, 0($sp)
+    lw $t1, -60($sp)
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -64($sp)
+    li $t0, 0
+    sw $t0, -68($sp)
+    lw $t0, -64($sp)
+    lw $t1, -68($sp)
+    seq $t0, $t0, $t1
+    sw $t0, -72($sp)
+    beq $t0, $0, if$1_end
+if$1_begin:
+    j while$2_end
+if$1_end:
+    lw $t0, -32($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -76($sp)
+    sw $t0, -32($sp)
+    j while$2_begin
+while$2_end:
+    lw $t0, 0($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -80($sp)
+    sw $t0, 0($sp)
+    j while$1_begin
+while$1_end:
+    li $t0, 0
+    sw $t0, 0($sp)
+while$3_begin:
+    li $t0, 114514
+    sw $t0, -84($sp)
+    beq $t0, $0, while$3_end
+while$3_stmt:
+    la $t0, a$0$arr$dim1_510
+    lw $t1, 0($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -88($sp)
+    beq $t0, $0, if$2_end
+if$2_begin:
+    lw $t0, 0($sp)
+    li $t1, 2
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -92($sp)
+    lw $t0, 0($sp)
+    li $t1, 16
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -96($sp)
+    la $t0, reflect1$0$arr$dim1_16
+    lw $t1, -96($sp)
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -100($sp)
+    lw $t0, -92($sp)
+    lw $t1, -100($sp)
+    mul $t0, $t0, $t1
+    sw $t0, -104($sp)
+    lw $t0, 0($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -108($sp)
+    li $t1, 2
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -112($sp)
+    lw $t0, 0($sp)
+    li $t1, 5
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -116($sp)
+    lw $t0, 0($sp)
+    li $t1, 5
+    div $t0, $t1
+    mfhi $t0
+    sw $t0, -120($sp)
+    la $t0, reflect2$0$arr$dim1_5$dim2_5
+    lw $t1, -116($sp)
+    li $t2, 5
+    mul $t1, $t1, $t2
+    lw $t2, -120($sp)
+    addu $t1, $t1, $t2
+    sll $t1, $t1, 2
+    addu $t0, $t0, $t1
+    lw $t0, 0($t0)
+    sw $t0, -124($sp)
+    lw $t0, -112($sp)
+    lw $t1, -124($sp)
+    mul $t0, $t0, $t1
+    sw $t0, -128($sp)
+    lw $t0, -104($sp)
+    lw $t1, -128($sp)
+    addu $t0, $t0, $t1
+    sw $t0, -132($sp)
+    lw $a0, 0($sp)
+    li $v0, 1
+    syscall
+    la $a0, str$1
+    li $v0, 4
+    syscall
+    lw $a0, -132($sp)
+    li $v0, 1
+    syscall
+    la $a0, str$2
+    li $v0, 4
+    syscall
+if$2_end:
+    lw $t0, 0($sp)
+    li $t1, 1
+    addu $t0, $t0, $t1
+    sw $t0, -136($sp)
+    sw $t0, 0($sp)
+    lw $t1, -4($sp)
+    slt $t0, $t0, $t1
+    sw $t0, -140($sp)
+    beq $t0, $0, if$3_end
+if$3_begin:
+    j while$3_begin
+    j else$0_end
+if$3_end:
+    j while$3_end
+else$0_end:
+    j while$3_begin
+    j while$3_end
+    j while$3_begin
+    j while$3_end
+    j while$3_begin
+    j while$3_end
+    j while$3_begin
+    j while$3_end
+    j while$3_begin
+while$3_end:
+    li $v0, 10
+    syscall
+    li $v0, 10
+    syscall
