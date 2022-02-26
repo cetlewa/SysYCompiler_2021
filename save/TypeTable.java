@@ -1,0 +1,41 @@
+public enum TypeTable {
+    MAINTK,             //main
+    CONSTTK,            //const
+    INTTK,              //int
+    BREAKTK,            //break
+    CONTINUETK,         //continue
+    IFTK,               //if
+    ELSETK,             //else
+    WHILETK,            //while
+    GETINTTK,           //getint
+    PRINTFTK,           //printf
+    RETURNTK,           //return
+    VOIDTK,             //void
+    IDENFR,             //Ident
+    INTCON,             //IntConst
+    STRCON,             //FormatString
+    NOT,                //!
+    AND,                //&&
+    OR,                 //||
+    PLUS,               //+
+    MINU,               //-
+    MULT,               //*
+    DIV,                ///
+    MOD,                //%
+    LSS,                //<
+    LEQ,                //<=
+    GRE,                //>
+    GEQ,                //>=
+    EQL,                //==
+    NEQ,                //!=
+    ASSIGN,             //=
+    SEMICN,             //;
+    COMMA,              //,
+    LPARENT,            //(
+    RPARENT,            //)
+    LBRACK,             //[
+    RBRACK,             //]
+    LBRACE,             //{
+    RBRACE,             //}
+    END,
+}
