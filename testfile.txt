@@ -1,0 +1,77 @@
+const int a = 1, b = 2, c = 3;
+int aa = c - b, bb = 2, cc = c;
+//int getint(){
+//    int n;
+//    scanf("%d", &n);
+//    return n;
+//}
+void void_f(){
+    printf("This is function void_f.\n");
+    printf("aa = %d, bb = %d, cc = %d.\n", aa, bb, cc);
+    a + b;
+    return;
+}
+void void_ff(int a){
+    printf("This is function void_ff, a is %d.\n", a);
+    return;
+}
+void void_fff(int a, int b, int c){
+    printf("This is function void_fff, a is %d, b is %d, c is %d.\n", a, b, c);
+    printf("a+b is %d, a*c is %d.\n", a+b, a*c);
+    return;
+}
+int int_f(){
+    int a = 1;
+    printf("This is function int_f, a = %d is 1.\n", a);
+    return a;
+}
+int int_ff(int a){
+    int b;
+    b = getint();
+    printf("This is function int_ff, a = %d, b = %d.\n", a, b);
+    return b;
+}
+int int_fff(int a, int b, int c){
+    printf("This is function int_fff, a = %d, b = %d, c = %d.\n", a, b, c);
+    printf("a+b*c = %d.\n", a+b*c);
+    return a + b * c;
+}
+int int_ffff(int a, int b){
+    printf("int_fff(a, b, b) = %d.\n", int_fff(a, b, b));
+    printf("int_fff(a, b, b) + int_fff(b, a, a) = %d.\n", int_fff(a, b, b) + int_fff(b, a, a));
+    return 2;
+}
+int int_fffff(int a, int b, int c){
+    printf("This is function int_fffff.\n");
+    printf("int_ffff(a, b) = %d.\n", int_ffff(a, b));
+    return 3;
+}
+int main(){
+    printf("a = %d ", a);
+    int a;
+    a = getint();
+    printf("Now a = %d.\n", a);
+    int b = 1;
+    int c = 2;
+    void_f();
+    void_ff(a);
+    void_fff(a, b, c);
+    int_f();
+    printf("int_f = %d.\n", int_f());
+    int_ff(a);
+    int_fff(a, b, c);
+    int_fff(c, b, a);
+    int_ffff(a, b);
+    int_ffff(b, a);
+    printf("That's all.\n");
+    a = -a;
+    printf("a = %d\n", a);
+    a = -+-a;
+    printf("a = %d\n", a);
+    a = +-+-+-+-b+c;
+    printf("a = %d\n", a);
+    printf("a/c = %d, a%c = %d.\n", a/c, a%c);
+    int_fffff(a, b, c);
+    printf("int_fffff(a, b, b) = %d.\n", int_fffff(a, b, b));
+    return 0;
+}
